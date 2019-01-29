@@ -16,21 +16,6 @@
     <name>dubbo-study-all</name>
     <description>wdf-dubbo-study</description>
 
-    <!--&lt;!&ndash;SpringBoot的依赖&ndash;&gt;-->
-    <!--<parent>-->
-        <!--<groupId>org.springframework.boot</groupId>-->
-        <!--<artifactId>spring-boot-starter</artifactId>-->
-        <!--<version>1.5.17.RELEASE</version>-->
-        <!--<relativePath/>-->
-    <!--</parent>-->
-    <!--SpringBoot的依赖-->
-    <!--<parent>-->
-        <!--<groupId>org.springframework.boot</groupId>-->
-        <!--<artifactId>spring-boot-starter</artifactId>-->
-        <!--<version>2.1.1.RELEASE</version>-->
-        <!--<relativePath/>-->
-    <!--</parent>-->
-
     <dependencyManagement>
         <dependencies>
             <!-- Spring Boot -->
@@ -61,6 +46,13 @@
 
     <dependencies>
 
+        <!--dubbo 的自动依赖-->
+        <dependency>
+            <groupId>com.alibaba.boot</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
+            <version>0.2.0</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
@@ -72,12 +64,6 @@
             <version>2.6.5</version>
         </dependency>
 
-        <!--dubbo 的自动依赖-->
-        <dependency>
-            <groupId>com.alibaba.boot</groupId>
-            <artifactId>dubbo-spring-boot-starter</artifactId>
-            <version>0.2.0</version>
-        </dependency>
 
         <!--JSON序列化-->
         <dependency>
@@ -98,17 +84,19 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.7</version>
         </dependency>
-        <!--hutool工具库-->
-        <dependency>
-            <groupId>cn.hutool</groupId>
-            <artifactId>hutool-all</artifactId>
-            <version>4.1.17</version>
-        </dependency>
+
         <!--单元测试-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <!--hutool工具库-->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>4.1.17</version>
         </dependency>
     </dependencies>
 
