@@ -50,7 +50,7 @@
         <dependency>
             <groupId>com.alibaba.boot</groupId>
             <artifactId>dubbo-spring-boot-starter</artifactId>
-            <version>0.2.0</version>
+            <version>0.2.1.RELEASE</version>
         </dependency>
 
         <dependency>
@@ -64,6 +64,10 @@
             <version>2.6.5</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+        </dependency>
 
         <!--JSON序列化-->
         <dependency>
@@ -98,6 +102,7 @@
             <artifactId>hutool-all</artifactId>
             <version>4.1.17</version>
         </dependency>
+
     </dependencies>
 
     <build>
