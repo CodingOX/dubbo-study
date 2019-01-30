@@ -17,7 +17,7 @@ public class DubboConfiguration {
 
     @Bean
     public ApplicationConfig applicationConfig() {
-        ApplicationConfig applicationConfig = new ApplicationConfig("demo-test");
+        ApplicationConfig applicationConfig = new ApplicationConfig("lcf-test");
         return applicationConfig;
     }
 
